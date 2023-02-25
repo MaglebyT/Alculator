@@ -1,0 +1,77 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <style>
+            @font-face {
+                font-family: collegeBoy;
+                src: url("./College Boy.otf"); 
+            } </style>
+    </head> 
+    <body>
+        
+        <div>
+            <input id="input-limit" type="text" placeholder="ex 3">
+            <button id="limit-btn">What is your drink limit?</button>
+            <p>1 standard drink = 6 points (0.6 oz of pure alcohol)</p>
+        </div>
+       
+        <div>
+        <div class="section">
+            <div class="container">
+            
+                <div class="section">
+                    <h3>Your Points</h3>
+                <h2 class="score" id="count-score-rounded">0</h2>
+                <h3 >Your Count</h3>
+                <h2 class="drink-count" id= "drink-score-count">0</h2>
+
+
+                </div>
+                
+                <div class="section">  
+                <h3>Your Limit</h3>
+                <h2 class="score" id="limit-pts-set">0</h2>
+                
+                <h3>Drinks</h3>
+                <h2 class="drink-count" id="limit-set">0</h2>
+            </div>
+            
+           
+        </div>
+        <div>
+            <h3>Drink Point Converter</h3>
+            
+            <!-- to do: add custom drink size and abv -->
+
+            <!-- <p>Enter how many OZ and ABV(%)</p>
+            <input id="custom-oz" type="text" placeholder="Oz ex 1.5">
+            <input id="custom-abv" type="text" placeholder="ABV% ex 7.1">
+            <button id="custom-btn" onclick="customDrink()">Custom</button> -->
+        </div>
+
+        <!-- to do: refactor to make more dry -->
+        
+            <p>Standard sizes: 12oz beer, 1.5oz Shot, 5oz glass of wine</p>
+            <button id="increase-one-light" onclick="increaseOneLight()">Lite (4.2%)</button>
+            <button id="increase-one-standard" onclick="increaseOneStandard()">Standard (5%)</button>
+            <button id="increase-one-heavy" onclick="increaseOneHeavy()">IPA (6.2%)</button>
+           
+            <p>Tall Beers: 16oz</p>
+            <button id="increase-one-light" onclick="increaseOneTall()">Lite (4.2%)</button>
+            <button id="increase-one-standard" onclick="increaseOneTallAvg()">Standard (5%)</button>
+            <button id="increase-one-heavy" onclick="increaseOneTallHeavy()">IPA (6.2%)</button>
+           
+            <p>Large Beers: 22oz</p>
+            <button id="increase-one-light" onclick="increaseOneLargeLight()">Lite (4.2%)</button>
+            <button id="increase-one-standard" onclick="increaseOneLargeStandard()">Standard (5%)</button>
+            <button id="increase-one-heavy" onclick="increaseOneLargeHeavy()">IPA (6.2%)</button>
+            
+
+        </div>
+        <button class="reset-btn" id="reset-button" onclick="resetCount()">Reset Count</button>
+        <button class="reset-btn" id="reset-button" onclick="resetAll()">Reset</button>
+       
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
